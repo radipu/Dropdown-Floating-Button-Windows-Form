@@ -38,9 +38,7 @@ namespace DropDownPanel
             this.button2 = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
-            this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
             this.panelDropDown.SuspendLayout();
-            this.flowLayoutPanel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // timer1
@@ -56,7 +54,7 @@ namespace DropDownPanel
             this.panelDropDown.Controls.Add(this.button2);
             this.panelDropDown.Controls.Add(this.button4);
             this.panelDropDown.Controls.Add(this.button3);
-            this.panelDropDown.Location = new System.Drawing.Point(3, 3);
+            this.panelDropDown.Location = new System.Drawing.Point(106, 12);
             this.panelDropDown.MaximumSize = new System.Drawing.Size(580, 120);
             this.panelDropDown.MinimumSize = new System.Drawing.Size(580, 58);
             this.panelDropDown.Name = "panelDropDown";
@@ -74,6 +72,8 @@ namespace DropDownPanel
             // 
             // button1
             // 
+            this.button1.FlatAppearance.BorderSize = 0;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1.Image = global::DropDownPanel.Properties.Resources.Expand_Arrow_20px;
             this.button1.Location = new System.Drawing.Point(235, 3);
             this.button1.Name = "button1";
@@ -118,25 +118,15 @@ namespace DropDownPanel
             this.button3.Text = "button3";
             this.button3.UseVisualStyleBackColor = true;
             // 
-            // flowLayoutPanel1
-            // 
-            this.flowLayoutPanel1.Controls.Add(this.panelDropDown);
-            this.flowLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.flowLayoutPanel1.Location = new System.Drawing.Point(0, 0);
-            this.flowLayoutPanel1.Name = "flowLayoutPanel1";
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(800, 165);
-            this.flowLayoutPanel1.TabIndex = 0;
-            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.flowLayoutPanel1);
+            this.Controls.Add(this.panelDropDown);
             this.Name = "Form1";
             this.Text = "Form1";
             this.panelDropDown.ResumeLayout(false);
-            this.flowLayoutPanel1.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -150,7 +140,6 @@ namespace DropDownPanel
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button4;
         private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;
     }
 }
 

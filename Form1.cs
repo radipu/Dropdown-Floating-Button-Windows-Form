@@ -1,4 +1,5 @@
-﻿using DropDownPanel.Properties;
+﻿using CSScriptLib;
+using DropDownPanel.Properties;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -13,6 +14,7 @@ namespace DropDownPanel
 {
     public partial class Form1 : Form
     {
+        //int flag = -1;
         private bool isCollapsed;
         public Form1()
         {
@@ -47,5 +49,27 @@ namespace DropDownPanel
         {
             timer1.Start();
         }
+        #region auto hide the whole panel
+        //private void button1_MouseMove(object sender, MouseEventArgs e)
+        //{
+        //    if(e.Y == 10)
+        //    {
+        //        panelDropDown.Visible = true;
+        //    }
+        //    else if(e.Y > 20)
+        //    {
+        //        panelDropDown.Visible = false;
+        //    }
+        //}
+
+        //private void button7_Click(object sender, EventArgs e)
+        //{
+        //    flag *= -1;
+        //    if (flag == 1)
+        //        panelDropDown.Hide();
+        //    else
+        //        panelDropDown.Show();
+        //}
+        #endregion auto hide the whole panel
     }
 }
