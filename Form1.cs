@@ -49,27 +49,30 @@ namespace DropDownPanel
         {
             timer1.Start();
         }
-        #region auto hide the whole panel
-        //private void button1_MouseMove(object sender, MouseEventArgs e)
-        //{
-        //    if(e.Y == 10)
-        //    {
-        //        panelDropDown.Visible = true;
-        //    }
-        //    else if(e.Y > 20)
-        //    {
-        //        panelDropDown.Visible = false;
-        //    }
-        //}
 
-        //private void button7_Click(object sender, EventArgs e)
-        //{
-        //    flag *= -1;
-        //    if (flag == 1)
-        //        panelDropDown.Hide();
-        //    else
-        //        panelDropDown.Show();
-        //}
-        #endregion auto hide the whole panel
+        private void button2_Click(object sender, EventArgs e)
+        {
+            timer1.Start();
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            timer1.Start();
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            timer1.Start();
+        }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            timer1.Start();
+        }
+
+        private void button6_Click(object sender, EventArgs e)
+        {
+            timer1.Start();
+        }
     }
 }
